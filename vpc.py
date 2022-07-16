@@ -1,6 +1,6 @@
 import boto3
 
-session = boto3.session.Session(profile_name="full")
+session = boto3.session.Session(profile_name="Your_profile_name")
 ec2_res = session.resource(service_name="ec2",region_name="us-east-1")
 ec2_cli = session.client(service_name="ec2",region_name="us-east-1")
 
